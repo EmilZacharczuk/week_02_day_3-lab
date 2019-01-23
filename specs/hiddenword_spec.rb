@@ -8,6 +8,10 @@ class HiddenwordTest < MiniTest::Test
 
   def setup
     @hiddenword = Hiddenword.new("Codeclan")
+    #create a game instance
   end
 
+  def test_hiddenword_has_word
+    assert_equal("Codeclan", @hiddenword.word)
+  end
 end
