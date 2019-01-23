@@ -9,4 +9,8 @@ class Game
   def add_letter_to_guessed_letters(letter)
     return @guessed_letters.push(letter)
   end
+
+
+
+
 end
