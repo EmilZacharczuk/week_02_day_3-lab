@@ -32,5 +32,9 @@ class HiddenwordTest < MiniTest::Test
     assert_equal("******a*", @hiddenword.compare_guesses_to_word(@game))
   end
 
-  def test_
+  def test_if_guessed_letters_matches_hiddenword_array__2_letters
+    @game.add_letter_to_guessed_letters("a")
+    @game.add_letter_to_guessed_letters("c")
+    assert_equal("******a*", @hiddenword.compare_guesses_to_word(@game))
+  end
 end
